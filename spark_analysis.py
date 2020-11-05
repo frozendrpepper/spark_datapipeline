@@ -126,14 +126,14 @@ for i in range(len(covid_aggregated)):
         not_included.append(covid_aggregated[i][1])
 
 '''Establish MySQL connection'''
-connection = mysql.connector.connect(user='your_mysql_user', password='your_mysql_pwd', host = 'your_mysql_server_id', database = 'your_db')
+connection = mysql.connector.connect(user='your_mysql_user', password='your_mysql_pwd', host = 'your_mysql_server_ip', database = 'your_db')
 cursor = connection.cursor()
 
 '''Insert into country database under dsci551 database'''
-insert_country_data(cursor, country_list, False)
-insert_country_date_aggregate(cursor, data_cleansed, False)
+insert_country_data(cursor, country_list, True)
+insert_country_date_aggregate(cursor, data_cleansed, True)
 
 '''Connect to MongoDB and upload confirmed, death and recover cases aggregated by each date'''
 mongo_connection = MongoClient('mongodb://%s:%s@your_mongo_host_ip:27017' % ('your_mongo_id', 'your_mongo_pwd'))
 db = mongo_connection.project
-insert_date_aggregate(db, covid_date_aggregated, False)
+insert_date_aggregate(db, covid_date_aggregated, True)
