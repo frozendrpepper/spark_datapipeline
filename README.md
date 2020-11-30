@@ -19,3 +19,7 @@ Later, React + Node based dashboard communicate with the databases and fetch nec
 * covid_19_data.csv -> Accumulated Covid dataset from Jan.22 ~ Sep.23rd listing number of confirmed, deaths and recovered by date and country
 * country.csv -> CSV containing name of countries and their latitude/longitude
 * spark_analysis.py -> Python script used to handle data manipulation through Spark DataFrame and update data to remote databases using mysql.connector and pymongo
+
+## Links to original dataset
+* [Kaggle Covid-19 dataset](https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset)
+* [Kaggle Country latitude and longitude](https://www.kaggle.com/paultimothymooney/latitude-and-longitude-for-every-country-and-state)
