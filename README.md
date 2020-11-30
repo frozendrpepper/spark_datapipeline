@@ -6,7 +6,7 @@ following steps and aims to demonstrate a simple data pipeline involving data ma
 2) Insert COVID data aggregated by date and country and country latitude/longitude information onto MySQL On AWS EC2
 3) Insert COVID data aggregated by date to MongoDB on AWS EC2
 
-Later, React + Node based dashboard communicate with the databases and fetch necessary data to display according to user's input
+Later, React + Node based dashboard communicate with the databases and fetch necessary data to display according to user's input [Link to Dashboard](https://github.com/frozendrpepper/covid_dashboard)
 
 
 ## Note about working environment
